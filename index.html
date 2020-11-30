@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">
+    <!-- foglio stile -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js" integrity="sha512-MQkEjxbZvzs4TX8ES4/tTIyaYdtDlJzVocnPo0GoysTR0jCmNg0P2is7uqpCoWxmoS9X84CDVzuWgZD/R/Q2oQ==" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- file script -->
+    <script src="js/script.js" charset="utf-8"></script>
+    <title>to do</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cose da fare</h1>
+      <input type="text" name="add" value="" placeholder="Inserisci un nuovo elemento">
+      <ul id="todo-list"></ul>
+    </div>
+
+
+    <script id="entry-template" type="text/x-handlebars-template">
+      <li class="entry">
+        <div class="element">{{element}}</div>
+        <span class="delete">X</span>
+        </li>
+    </script>
+
+  </body>
+</html>
